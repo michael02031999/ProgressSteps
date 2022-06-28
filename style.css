@@ -1,18 +1,32 @@
 body {
   background-color: rgb(246, 247, 251);
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
+
   height: 100vh;
-  position: relative;
 }
 
 #container {
   display: grid;
-  /*background-color: gold;*/
+  grid-template-rows: auto auto;
+  place-items: center;
+  row-gap: 40px;
+}
+
+#circleContainer {
+  display: grid;
   grid-template-columns: auto auto auto auto;
   justify-content: center;
-  column-gap: 50px;
+  align-items: center;
+  column-gap: 80px;
+}
+
+#buttonContainer {
+  display: flex;
+
+  justify-content: space-around;
+
   width: 50%;
 }
 
@@ -32,11 +46,43 @@ body {
   position: relative;
 }
 
+#circle2 {
+  border-color: rgb(224, 224, 224);
+  transition: border 0.25s;
+}
+
 #bar1 {
   position: absolute;
   top: 11px;
   left: 25px;
-  width: 53px;
+  width: 0px;
   height: 4px;
+  background-color: rgb(52, 152, 218);
+  transition: width 0.25s;
+  z-index: 2;
+}
+
+#bar2 {
+  position: absolute;
+  top: 11px;
+  left: 28px;
+  width: 80px;
+  height: 4px;
+  z-index: 1;
+  background-color: rgb(224, 224, 224);
+}
+
+#button1,
+#button2 {
+  font-family: Muli;
+  background-color: rgb(224, 224, 224);
+  padding: 10px 25px;
+  border: 0px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 10px;
+  color: rgb(254, 254, 255);
+}
+
+#button2 {
   background-color: rgb(52, 152, 218);
 }
