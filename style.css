@@ -46,12 +46,16 @@ body {
   position: relative;
 }
 
-#circle2 {
+#circle2,
+#circle3,
+#circle4 {
   border-color: rgb(224, 224, 224);
   transition: border 0.25s;
 }
 
-#bar1 {
+#bar1,
+#bar2,
+#bar3 {
   position: absolute;
   top: 11px;
   left: 25px;
@@ -62,7 +66,9 @@ body {
   z-index: 2;
 }
 
-#bar2 {
+#bar11,
+#bar21,
+#bar31 {
   position: absolute;
   top: 11px;
   left: 28px;
